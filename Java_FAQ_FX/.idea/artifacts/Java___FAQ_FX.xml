@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" build-on-make="true" name="Java  _FAQ_FX">
+    <output-path>$PROJECT_DIR$/out/artifacts/Java___FAQ_FX</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="main_package.Main" />
+        <option name="description" value="Free and Open" />
+        <option name="htmlParamFile" value="" />
+        <option name="paramFile" value="" />
+        <option name="title" value="JavaJR-FAQ" />
+        <option name="vendor" value="None" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="Java___FAQ_FX.jar">
+        <element id="module-output" name="Java  _FAQ_FX" />
+      </element>
+    </root>
+  </artifact>
+</component>

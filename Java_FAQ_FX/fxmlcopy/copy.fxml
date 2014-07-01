@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="566.0" rotate="0.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main_package.MainframeController">
+  <children>
+    <HBox id="HBox" fx:id="TopBox" alignment="CENTER" layoutX="14.0" layoutY="12.0" spacing="5.0">
+      <children>
+        <MenuBar blendMode="MULTIPLY" prefHeight="29.0" prefWidth="539.0" useSystemMenuBar="false">
+          <effect>
+            <Glow level="0.570440251572327" />
+          </effect>
+          <menus>
+            <Menu mnemonicParsing="false" text="Полезные статьи">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#Bar_topic_1" text="С секретов входа в IT" />
+                <MenuItem mnemonicParsing="false" onAction="#Bar_topic_2" text="Как совмещать работу и учебу" />
+                <MenuItem mnemonicParsing="false" onAction="#Bar_topic_3" text="Как получить первую работу" />
+                <MenuItem mnemonicParsing="false" onAction="#Bar_topic_4" text="Прохождение HR-интервью" /><MenuItem mnemonicParsing="false" onAction="#Bar_topic_5" text="Как не завалить техническое собеседование" /><MenuItem mnemonicParsing="false" onAction="#Bar_topic_6" text="Вредные советы для джуниоров" /><MenuItem mnemonicParsing="false" onAction="#Bar_topic_7" text="Креш-тест резюме" />
+                <MenuItem mnemonicParsing="false" text="Close" />
+              </items>
+            </Menu><Menu mnemonicParsing="false" text="Готовимся  к интервью">
+<items>
+<MenuItem mnemonicParsing="false" onAction="#Bar_job_1" text="topic" />
+<MenuItem mnemonicParsing="false" onAction="#Bar_job_2" text="topic" />
+<MenuItem mnemonicParsing="false" onAction="#Bar_job_3" text="topic" />
+<MenuItem mnemonicParsing="false" onAction="#Bar_job_4" text="topic" />
+<MenuItem mnemonicParsing="false" text="Close" />
+</items>
+</Menu>
+            <Menu mnemonicParsing="false" text="О программе">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#Bar_about_1" text="topic" />
+                <MenuItem mnemonicParsing="false" onAction="#Bar_about_2" text="topic" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Версия">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#Bar_version" text="About" />
+              </items>
+            </Menu>
+          </menus>
+        </MenuBar>
+      </children>
+    </HBox>
+    <VBox id="VBox" fx:id="LectionBox" alignment="CENTER" layoutX="15.0" layoutY="45.0" spacing="5.0">
+      <children>
+        <VBox id="VBox" fx:id="LectionBox" alignment="CENTER" spacing="5.0">
+          <children>
+            <Text blendMode="SRC_OVER" fontSmoothingType="GRAY" smooth="true" strikethrough="false" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Java Core Лекции" textAlignment="LEFT" underline="false">
+              <effect>
+                <DropShadow color="GREY" height="4.8730158730158735" radius="1.9365079365079367" width="4.8730158730158735" />
+              </effect>
+              <font>
+                <Font name="Arial Italic" size="16.0" fx:id="x1" />
+              </font>
+            </Text>
+            <Button id="LectionBtn" cancelButton="false" contentDisplay="TOP" mnemonicParsing="false" onAction="#Btn_Core_Intro" opacity="1.0" prefHeight="26.0" prefWidth="171.0" text="Введение в Java">
+              <effect>
+                <DropShadow />
+              </effect>
+            </Button>
+            <Button id="LectionBtn" mnemonicParsing="false" onAction="#Btn_Core_Platform" prefHeight="26.0" prefWidth="171.0" text="1.Платформа Java">
+              <effect>
+                <DropShadow />
+              </effect>
+            </Button>
+            <Button id="LectionBtn" mnemonicParsing="false" onAction="#Btn_Core_Exceptions" prefHeight="26.0" prefWidth="171.0" text="2.Exceptions">
+              <effect>
+                <DropShadow />
+              </effect>
+            </Button>
+            <Button id="LectionBtn" mnemonicParsing="false" onAction="#Btn_Core_IO" prefHeight="26.0" prefWidth="171.0" text="3.Input | Output">
+              <effect>
+                <DropShadow />
+              </effect>
+            </Button>
+            <Button id="LectionBtn" mnemonicParsing="false" onAction="#Btn_Core_Threads" prefHeight="26.0" prefWidth="171.0" text="4.Многопоточность">
+              <effect>
+                <DropShadow />
+              </effect>
+            </Button>
+            <Button id="LectionBtn" mnemonicParsing="false" onAction="#Btn_Core_Coll" prefHeight="26.0" prefWidth="171.0" text="5.Collections Framework">
+              <effect>
+                <DropShadow />
+              </effect>
+            </Button>
+            <Button id="LectionBtn" mnemonicParsing="false" onAction="#Btn_Core_OOP" prefHeight="26.0" prefWidth="171.0" text="6.OOP">
+              <effect>
+                <DropShadow />
+              </effect>
+            </Button>
+            <Text blendMode="SRC_OVER" font="$x1" fontSmoothingType="GRAY" smooth="true" strikethrough="false" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Java Advanced Лекции" textAlignment="LEFT" underline="false">
+              <effect>
+                <DropShadow color="GREY" height="4.8730158730158735" radius="1.9365079365079367" width="4.8730158730158735" />
+              </effect>
+            </Text>
+            <Button id="LectionBtn" cancelButton="false" contentDisplay="TOP" mnemonicParsing="false" onAction="#Btn_Core_GoF" opacity="1.0" prefHeight="26.0" prefWidth="171.0" text="Шаблоны проектирования">
+              <effect>
+                <DropShadow />
+              </effect>
+            </Button>
+            <Button id="LectionBtn" cancelButton="false" contentDisplay="TOP" mnemonicParsing="false" onAction="#Btn_Core_JDBC" opacity="1.0" prefHeight="26.0" prefWidth="171.0" text="Java DataBase Connectivity [JDBC]">
+              <effect>
+                <DropShadow />
+              </effect>
+            </Button>
+            <Button id="LectionBtn" cancelButton="false" contentDisplay="TOP" mnemonicParsing="false" onAction="#Btn_Core_Servlet" opacity="1.0" prefHeight="26.0" prefWidth="171.0" text="Servlet API/JSP">
+              <effect>
+                <DropShadow />
+              </effect>
+            </Button>
+            <Button id="LectionBtn" cancelButton="false" contentDisplay="TOP" mnemonicParsing="false" onAction="#Btn_Core_HTTP" opacity="1.0" prefHeight="26.0" prefWidth="171.0" text="HTTP">
+              <effect>
+                <DropShadow />
+              </effect>
+            </Button>
+            <Button id="LectionBtn" cancelButton="false" contentDisplay="TOP" mnemonicParsing="false" onAction="#Btn_Core_DILoc" opacity="1.0" prefHeight="26.0" prefWidth="171.0" text="DI/IoC">
+              <effect>
+                <DropShadow />
+              </effect>
+            </Button>
+            <Button id="LectionBtn" cancelButton="false" contentDisplay="TOP" mnemonicParsing="false" onAction="#Btn_Core_Maven" opacity="1.0" prefHeight="26.0" prefWidth="171.0" text="Maven &amp; Log4u">
+              <effect>
+                <DropShadow />
+              </effect>
+            </Button>
+            <Button id="LectionBtn" cancelButton="false" contentDisplay="TOP" mnemonicParsing="false" onAction="#Btn_Core_TDD" opacity="1.0" prefHeight="26.0" prefWidth="171.0" text="TDD [JUnit] [Mockito]">
+              <effect>
+                <DropShadow />
+              </effect>
+            </Button>
+            <Button id="LectionBtn" cancelButton="false" contentDisplay="TOP" mnemonicParsing="false" onAction="#Btn_Core_Spring" opacity="1.0" prefHeight="26.0" prefWidth="171.0" text="Spring /MVC &amp; Rest API">
+              <effect>
+                <DropShadow />
+              </effect>
+            </Button>
+            <Button id="LectionBtn" cancelButton="false" contentDisplay="TOP" mnemonicParsing="false" onAction="#Btn_Core_XML" opacity="1.0" prefHeight="26.0" prefWidth="171.0" text="XML &amp; Generics">
+              <effect>
+                <DropShadow />
+              </effect>
+            </Button>
+          </children>
+        </VBox>
+      </children>
+    </VBox>
+    <VBox id="VBox" fx:id="PracticeBox" alignment="CENTER" layoutX="214.0" layoutY="50.0" spacing="5.0">
+      <children>
+        <Text blendMode="SRC_OVER" fontSmoothingType="GRAY" smooth="true" strikethrough="false" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Упражнения" textAlignment="LEFT" underline="false">
+          <effect>
+            <DropShadow color="GREY" height="4.8730158730158735" radius="1.9365079365079367" width="4.8730158730158735" />
+          </effect>
+          <font>
+            <Font name="Arial" size="16.0" fx:id="x3" />
+          </font>
+        </Text>
+        <Button mnemonicParsing="false" onAction="#Btn_exers_easy" opacity="0.77" prefHeight="28.0" prefWidth="150.0" text="Easy level" textAlignment="CENTER" textFill="BLACK" textOverrun="CENTER_ELLIPSIS" underline="false">
+          <effect>
+            <Lighting>
+              <bumpInput>
+                <Shadow />
+              </bumpInput>
+              <light>
+                <javafx.scene.effect.Light.Distant color="#00ff66" />
+              </light>
+            </Lighting>
+          </effect>
+          <font>
+            <Font name="System Bold" size="12.0" fx:id="x2" />
+          </font>
+        </Button>
+        <Button font="$x2" mnemonicParsing="false" onAction="#Btn_exers_mid" opacity="0.77" prefHeight="28.0" prefWidth="150.0" text="Middle level" textAlignment="CENTER" textFill="BLACK" textOverrun="CENTER_ELLIPSIS" underline="false">
+          <effect>
+            <Lighting>
+              <bumpInput>
+                <Shadow />
+              </bumpInput>
+              <light>
+                <javafx.scene.effect.Light.Distant color="#ccff00" />
+              </light>
+            </Lighting>
+          </effect>
+        </Button>
+        <Button font="$x2" mnemonicParsing="false" onAction="#Btn_exers_up" opacity="0.77" prefHeight="28.0" prefWidth="150.0" text="Upper level" textAlignment="CENTER" textFill="BLACK" textOverrun="CENTER_ELLIPSIS" underline="false">
+          <effect>
+            <Lighting>
+              <bumpInput>
+                <Shadow />
+              </bumpInput>
+              <light>
+                <javafx.scene.effect.Light.Distant color="#667eff" />
+              </light>
+            </Lighting>
+          </effect>
+        </Button>
+        <Button font="$x2" mnemonicParsing="false" onAction="#Btn_exers_adv" opacity="0.77" prefHeight="28.0" prefWidth="150.0" text="Advanced level" textAlignment="CENTER" textFill="BLACK" textOverrun="CENTER_ELLIPSIS" underline="false">
+          <effect>
+            <Lighting>
+              <bumpInput>
+                <Shadow />
+              </bumpInput>
+              <light>
+                <javafx.scene.effect.Light.Distant color="#ff6433" />
+              </light>
+            </Lighting>
+          </effect>
+        </Button>
+        <Text blendMode="SRC_OVER" font="$x3" fontSmoothingType="GRAY" smooth="true" strikethrough="false" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Online - Курсы" textAlignment="LEFT" underline="false">
+          <effect>
+            <DropShadow color="GREY" height="4.8730158730158735" radius="1.9365079365079367" width="4.8730158730158735" />
+          </effect>
+        </Text>
+        <Button font="$x2" mnemonicParsing="false" onAction="#Btn_online_jr" opacity="0.77" prefHeight="28.0" prefWidth="150.0" text="Javarush.ru" textAlignment="CENTER" textFill="BLACK" textOverrun="CENTER_ELLIPSIS" underline="false">
+          <effect>
+            <Lighting>
+              <bumpInput>
+                <Shadow />
+              </bumpInput>
+              <light>
+                <javafx.scene.effect.Light.Distant color="#99ffa9" />
+              </light>
+            </Lighting>
+          </effect>
+        </Button>
+        <Button font="$x2" mnemonicParsing="false" onAction="#Btn_online_jb" opacity="0.77" prefHeight="28.0" prefWidth="150.0" text="Javabegin.ru" textAlignment="CENTER" textFill="BLACK" textOverrun="CENTER_ELLIPSIS" underline="false">
+          <effect>
+            <Lighting>
+              <bumpInput>
+                <Shadow />
+              </bumpInput>
+              <light>
+                <javafx.scene.effect.Light.Distant>
+                  <color>
+                    <Color blue="0.663" green="1.000" red="0.600" fx:id="x4" />
+                  </color>
+                </javafx.scene.effect.Light.Distant>
+              </light>
+            </Lighting>
+          </effect>
+        </Button>
+        <Button font="$x2" mnemonicParsing="false" onAction="#Btn_online_int" opacity="0.77" prefHeight="28.0" prefWidth="150.0" text="Intuit.ru" textAlignment="CENTER" textFill="BLACK" textOverrun="CENTER_ELLIPSIS" underline="false">
+          <effect>
+            <Lighting>
+              <bumpInput>
+                <Shadow />
+              </bumpInput>
+              <light>
+                <javafx.scene.effect.Light.Distant color="$x4" />
+              </light>
+            </Lighting>
+          </effect>
+        </Button>
+        <Button font="$x2" mnemonicParsing="false" onAction="#Btn_online_ca" opacity="0.77" prefHeight="28.0" prefWidth="150.0" text="CodeAcademy.com" textAlignment="CENTER" textFill="BLACK" textOverrun="CENTER_ELLIPSIS" underline="false">
+          <effect>
+            <Lighting>
+              <bumpInput>
+                <Shadow />
+              </bumpInput>
+              <light>
+                <javafx.scene.effect.Light.Distant color="$x4" />
+              </light>
+            </Lighting>
+          </effect>
+        </Button>
+        <Text blendMode="SRC_OVER" font="$x3" fontSmoothingType="GRAY" smooth="true" strikethrough="false" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Online - Тесты" textAlignment="LEFT" underline="false">
+          <effect>
+            <DropShadow color="GREY" height="4.8730158730158735" radius="1.9365079365079367" width="4.8730158730158735" />
+          </effect>
+        </Text>
+        <Button font="$x2" mnemonicParsing="false" onAction="#Btn_test_quiz" opacity="0.77" prefHeight="28.0" prefWidth="150.0" text="Quizfull" textAlignment="CENTER" textFill="BLACK" textOverrun="CENTER_ELLIPSIS" underline="false">
+          <effect>
+            <Lighting>
+              <bumpInput>
+                <Shadow />
+              </bumpInput>
+              <light>
+                <javafx.scene.effect.Light.Distant color="$x4" />
+              </light>
+            </Lighting>
+          </effect>
+        </Button>
+        <Button font="$x2" mnemonicParsing="false" onAction="#Btn_test_wiz" opacity="0.77" prefHeight="28.0" prefWidth="150.0" text="Wiziq" textAlignment="CENTER" textFill="BLACK" textOverrun="CENTER_ELLIPSIS" underline="false">
+          <effect>
+            <Lighting>
+              <bumpInput>
+                <Shadow />
+              </bumpInput>
+              <light>
+                <javafx.scene.effect.Light.Distant color="$x4" />
+              </light>
+            </Lighting>
+          </effect>
+        </Button>
+        <Button font="$x2" mnemonicParsing="false" onAction="#Btn_test_4t" opacity="0.77" prefHeight="28.0" prefWidth="150.0" text="4tests" textAlignment="CENTER" textFill="BLACK" textOverrun="CENTER_ELLIPSIS" underline="false">
+          <effect>
+            <Lighting>
+              <bumpInput>
+                <Shadow />
+              </bumpInput>
+              <light>
+                <javafx.scene.effect.Light.Distant color="$x4" />
+              </light>
+            </Lighting>
+          </effect>
+        </Button>
+        <Button font="$x2" mnemonicParsing="false" onAction="#Btn_test_ps" opacity="0.77" prefHeight="28.0" prefWidth="150.0" text="Pskills" textAlignment="CENTER" textFill="BLACK" textOverrun="CENTER_ELLIPSIS" underline="false">
+          <effect>
+            <Lighting>
+              <bumpInput>
+                <Shadow />
+              </bumpInput>
+              <light>
+                <javafx.scene.effect.Light.Distant color="$x4" />
+              </light>
+            </Lighting>
+          </effect>
+        </Button>
+        <Text blendMode="SRC_OVER" font="$x3" fontSmoothingType="GRAY" smooth="true" strikethrough="false" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Java Книги" textAlignment="LEFT" underline="false">
+          <effect>
+            <DropShadow color="GREY" height="4.8730158730158735" radius="1.9365079365079367" width="4.8730158730158735" />
+          </effect>
+        </Text>
+        <Button cancelButton="false" contentDisplay="TOP" mnemonicParsing="false" onAction="#Btn_books" opacity="1.0" prefHeight="28.0" prefWidth="150.0" text="Download Books">
+          <effect>
+            <DropShadow />
+          </effect>
+        </Button>
+      </children>
+    </VBox>
+    <VBox id="VBox" alignment="CENTER" layoutX="383.0" layoutY="266.0" prefHeight="176.0" spacing="5.0">
+      <children>
+        <Text blendMode="SRC_OVER" font="$x1" fontSmoothingType="GRAY" smooth="true" strikethrough="false" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Java сообщества " textAlignment="LEFT" underline="false">
+          <effect>
+            <DropShadow color="GREY" height="4.8730158730158735" radius="1.9365079365079367" width="4.8730158730158735" />
+          </effect>
+        </Text>
+        <Button cancelButton="false" contentDisplay="TOP" mnemonicParsing="false" onAction="#Btn_javatalks" opacity="1.0" prefHeight="26.0" prefWidth="171.0" text="Javatalks">
+          <effect>
+            <InnerShadow>
+              <color>
+                <Color blue="0.000" green="1.000" red="0.561" fx:id="x5" />
+              </color>
+              <input>
+                <DropShadow />
+              </input>
+            </InnerShadow>
+          </effect>
+        </Button>
+        <Button cancelButton="false" contentDisplay="TOP" mnemonicParsing="false" onAction="#Btn_habra" opacity="1.0" prefHeight="26.0" prefWidth="171.0" text="Хабрахабр">
+          <effect>
+            <InnerShadow color="$x5">
+              <input>
+                <DropShadow />
+              </input>
+            </InnerShadow>
+          </effect>
+        </Button>
+        <Button cancelButton="false" contentDisplay="TOP" mnemonicParsing="false" onAction="#Btn_dou" opacity="1.0" prefHeight="26.0" prefWidth="171.0" text="DOU.UA">
+          <effect>
+            <InnerShadow color="$x5">
+              <input>
+                <DropShadow />
+              </input>
+            </InnerShadow>
+          </effect>
+        </Button>
+        <Button cancelButton="false" contentDisplay="TOP" mnemonicParsing="false" onAction="#Btn_skipy" opacity="1.0" prefHeight="26.0" prefWidth="171.0" text="Skipy">
+          <effect>
+            <InnerShadow color="$x5">
+              <input>
+                <DropShadow />
+              </input>
+            </InnerShadow>
+          </effect>
+        </Button>
+      </children>
+    </VBox><Pane layoutX="376.0" layoutY="72.0" prefHeight="193.0" prefWidth="178.0">
+<children>
+        <Text layoutX="61.747802734375" layoutY="168.85077476501465" scaleX="1.1524866592064682" scaleY="1.16765263613917" strokeType="OUTSIDE" strokeWidth="0.0" text="Java-FAQ">
+          <font>
+            <Font name="Batang" size="12.0" />
+          </font>
+        </Text>
+        <Hyperlink layoutX="46.0" layoutY="167.5" text="www.site.ru" /><ImageView fitHeight="150.0" fitWidth="200.0" layoutX="26.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+<image>
+<Image url="@../src/main_package/img/image.jpg" />
+</image></ImageView>
+</children></Pane><Label alignment="CENTER" contentDisplay="CENTER" layoutX="408.0" layoutY="496.0" opacity="0.31" prefHeight="29.0" prefWidth="118.0" text="FREE BLOCK">
+<font>
+<Font name="Garuda Bold" size="16.0" />
+</font></Label>
+  </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Java___FAQ_FX.jnlp">
+  <information>
+    <title>JavaJR-FAQ</title>
+    <vendor>None</vendor>
+    <description>Free and Open</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <jfx:javafx-runtime version="2.2+" href="http://javadl.sun.com/webapps/download/GetFile/javafx-latest/windows-i586/javafx2.jnlp"/>
+  </resources>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Java___FAQ_FX.jar" size="177197" download="eager" />
+  </resources>
+  <applet-desc  width="600" height="400" main-class="com.javafx.main.NoJavaFXFallback"  name="JavaJR_FAQ_FX" >
+    <param name="requiredFXVersion" value="2.2+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="600" height="400" main-class="main_package.Main"  name="JavaJR_FAQ_FX" />
+  <update check="background"/>
+</jnlp>
